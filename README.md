@@ -97,7 +97,11 @@ ________________________________________________________________________________
 	- El sprite asociado es "demon"
 	- Al acabar con él dropeará un item "Llave"
 	
-	
+### CU 6. GUI
+- Se muestran los puntos de vida del jugador
+- En caso de boss se muestran los puntos del enemigo
+- Se muestra el stage en el que se está (1-1, 1-2, 1-3)
+- Esta información estará sobre fondo negro en la parte superior d ela pantalla
 	
 	
 
