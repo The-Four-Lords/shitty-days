@@ -10,6 +10,19 @@ Tres tipos de enemigos y 1 tipo de boss:
 - Imp (hellbeast)
 - El jefe final es el demonio Puigdemoni (demon)
 
+## Table of contents
+  * [CU 0. El juego](#cu-0-el-juego)
+  * [CU 1. Level 1](#cu-1-level-1)
+  * [CU 2. Level 2](#cu-2-level-2)
+  * [CU 3. Player](#cu-3-player)
+  * [CU 4.Items](#cu-4items)
+  * [CU 4.1. Poción vida pequeña](#cu-41-poci-n-vida-peque-a)
+  * [CU 4.2. Llave](#cu-42-llave)
+  * [CU 5. Enemigos](#cu-5-enemigos)
+  * [CU 5.1. Lobo](#cu-51-lobo)
+  * [CU 5.2. Fantasma](#cu-52-fantasma)
+  * [CU 5.3. Imp](#cu-53-imp)
+  * [CU 5.4. Demon (boss)](#cu-54-demon--boss-)
 
 ____________________________________________________________________________________
 ### CU 0. El juego
