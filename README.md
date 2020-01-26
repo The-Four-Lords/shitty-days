@@ -125,7 +125,7 @@ Tres tipos de enemigos y 1 tipo de boss:
 - Al acabar con él dropeará un item "Llave"
  <div align="center">
 
-![Player](assets/GFX/enemies/demon/gif/demon-demon-idle.gif)
+![Player](assets/GFX/enemies/demon/gif/demon-idle.gif)
 ![Player](assets/GFX/enemies/demon/gif/demon-attack.gif)
 
 </div>
