@@ -1,21 +1,22 @@
-
-## Table of contents
-  * [CU 0. El juego](#cu-0-el-juego)
-  * [CU 1. Level 1](#cu-1-level-1)
-  * [CU 2. Level 2](#cu-2-level-2)
-  * [CU 3. Player](#cu-3-player)
-  * [CU 4.Items](#cu-4items)
-  * [CU 4.1. Poción vida pequeña](#cu-41-poci-n-vida-peque-a)
-  * [CU 4.2. Llave](#cu-42-llave)
-  * [CU 5. Enemigos](#cu-5-enemigos)
-  * [CU 5.1. Lobo](#cu-51-lobo)
-  * [CU 5.2. Fantasma](#cu-52-fantasma)
-  * [CU 5.3. Imp](#cu-53-imp)
-  * [CU 5.4. Demon (boss)](#cu-54-demon--boss-)
+- [Introducción (DRAFT):](#introducci%c3%b3n-draft)
+- [Casos de uso](#casos-de-uso)
+  - [CU 1. El juego](#cu-1-el-juego)
+  - [CU 2. Level 1](#cu-2-level-1)
+  - [CU 3. Level 2](#cu-3-level-2)
+  - [CU 4. Player](#cu-4-player)
+  - [CU 5.Items](#cu-5items)
+  - [CU 5.1. Poción vida pequeña](#cu-51-poci%c3%b3n-vida-peque%c3%b1a)
+  - [CU 5.2. Llave](#cu-52-llave)
+  - [CU 6. Enemigos](#cu-6-enemigos)
+  - [CU 6.1. Lobo](#cu-61-lobo)
+  - [CU 6.2. Fantasma](#cu-62-fantasma)
+  - [CU 6.3. Imp](#cu-63-imp)
+  - [CU 6.4. Demon (boss)](#cu-64-demon-boss)
+  - [CU 7. GUI](#cu-7-gui)
   
 
 ## Introducción (DRAFT):
-Sprites: https://ansimuz.itch.io/gothicvania-patreon-collection
+Sprites: https://ansimuz.itch.io/gothicvania-patreon-collection.
 Juego de plataformas 2D ambientado en Castlevania.
 El fin es superar los 2 niveles llenos de plataformas y enemigos.
 Al final del primer nivel hay que entrar en el portal.
@@ -24,7 +25,7 @@ Tres tipos de enemigos y 1 tipo de boss:
 - Lobo (hellhound)	
 - Fantasma (ghost)
 - Imp (hellbeast)
-- El jefe final es el demonio Puigdemoni (demon)
+- El jefe final es el demonio (demon)
 
 
 ## Casos de uso
@@ -41,7 +42,7 @@ Tres tipos de enemigos y 1 tipo de boss:
 
 ### CU 3. Level 2
 - Diseño del level uno, plataformas, enemigos y situación a elección del Diseñador
-- Enemigos: Lobo, Fantasma, Imp y boss Puigdemoni
+- Enemigos: Lobo, Fantasma, Imp y boss demon
 	
 ### CU 4. Player
 - Tiene 10 puntos de vida
