@@ -18,6 +18,7 @@ shape = SubResource( 1 )
 [node name="AnimationPlayer" parent="." instance=ExtResource( 2 )]
 position = Vector2( 0, -3.44748 )
 animation = "default"
+frame = 0
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true

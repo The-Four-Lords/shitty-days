@@ -37,10 +37,10 @@ func move():
 		motion.x = 0
 	
 	#If is a floor attack no move
-	if (Input.is_action_pressed("attack1") or Input.is_action_pressed("attack2")) and is_on_floor():
+	if Input.is_action_pressed("attack")  and is_on_floor():
 		motion.x = 0
 
 
 func animate():
 	#print("holdLeft:",holdLeft," holdRight:",holdRight," holdJump:",holdJump," holdAttack:",holdAttack)
-	emit_signal("animate", motion, Input.is_action_pressed("attack1"), Input.is_action_pressed("attack2"))
+	emit_signal("animate", motion, Input.is_action_pressed("attack"))
