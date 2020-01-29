@@ -44,7 +44,7 @@ func hasBossKey():
 
 # Updates the UI, currently are on scope the player's health and item display
 func update_GUI():
-    get_tree().call_group("GUI", "update_GUI", player)
+    get_tree().call_group("GUI", "update_GUI", player.health, player.items)
 
 func end_game():
     get_tree().change_scene("res://Levels/EndGame.tscn")
