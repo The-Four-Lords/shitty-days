@@ -12,7 +12,6 @@
 extents = Vector2( 9.06799, 16.1799 )
 
 [node name="Platforms_graveyard" type="Node2D"]
-editor/display_folded = true
 
 [node name="graveyard_platform_02" type="Sprite" parent="."]
 position = Vector2( 417.915, 368.847 )
@@ -66,6 +65,7 @@ texture = ExtResource( 6 )
 [node name="StaticBody2D" type="StaticBody2D" parent="graveyard_platform_07"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="graveyard_platform_07/StaticBody2D"]
+position = Vector2( 0.104004, 0.410995 )
 polygon = PoolVector2Array( -55.8563, 20.1665, -56.1703, 5.30289, -14.0916, -13.8524, 10.2974, -13.8524, 56.0397, 5.82626, 56.0397, 20.1665 )
 
 [node name="graveyard_platform_08" type="Sprite" parent="."]

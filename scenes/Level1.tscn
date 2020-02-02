@@ -20,7 +20,6 @@ volume_db = -20.0
 attenuation = 0.108819
 
 [node name="Enemies" type="Node2D" parent="."]
-editor/display_folded = true
 
 [node name="Hound" parent="Enemies" instance=ExtResource( 4 )]
 position = Vector2( 542.719, -78.0212 )
@@ -34,5 +33,10 @@ script = ExtResource( 6 )
 [node name="TileMap" type="TileMap" parent="."]
 mode = 2
 tile_set = ExtResource( 7 )
+cell_size = Vector2( 16, 16 )
+cell_custom_transform = Transform2D( 4, 0, 0, 4, 0, 0 )
+centered_textures = true
+collision_layer = 4
+collision_mask = 3
 format = 1
-tile_data = PoolIntArray( -2555773, 1, 0, -1572792, 0, 0, -1113914, 2, 0, -786391, 0, 0, -327450, 2, 0, -130743, 5, 0, 65545, 0, 0, 459013, 2, 0, 851794, 5, 0, 851905, 5, 0, 1507596, 6, 0 )
+tile_data = PoolIntArray( -720810, 5, 0, -393146, 0, 0, -393114, 2, 0, -196545, 0, 0, -196499, 2, 0, -130987, 6, 0, -130925, 5, 0, -130897, 5, 0, -130869, 5, 0, -65407, 1, 0, 56, 0, 0, 114, 2, 0, 131146, 6, 0, 131160, 6, 0, 262125, 1, 0, 262133, 1, 0, 262141, 1, 0, 196613, 1, 0, 196621, 1, 0, 196629, 1, 0, 196637, 1, 0, 196645, 1, 0, 196653, 1, 0, 196657, 0, 0, 327775, 6, 0, 393363, 6, 0, 393391, 6, 0, 393418, 6, 0, 458817, 6, 0, 524386, 6, 0 )
