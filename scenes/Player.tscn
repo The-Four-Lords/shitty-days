@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scripts/Player.gd" type="Script" id=1]
 [ext_resource path="res://scenes/AnimationPlayer.tscn" type="PackedScene" id=2]
-[ext_resource path="res://jose_assests_test/gerudo.jpg" type="Texture" id=3]
+[ext_resource path="res://assets/GFX/background/graveyard/night_moon.png" type="Texture" id=3]
+[ext_resource path="res://assets/GFX/background/graveyard/mountains.png" type="Texture" id=4]
+[ext_resource path="res://assets/GFX/background/graveyard/graveyard.png" type="Texture" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 8.11039, 14.6576 )
@@ -17,23 +19,46 @@ shape = SubResource( 1 )
 
 [node name="AnimationPlayer" parent="." instance=ExtResource( 2 )]
 position = Vector2( 0, -3.44748 )
-animation = "default"
-frame = 0
+animation = "idle"
 
 [node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2( 300, -100 )
 current = true
-zoom = Vector2( 0.5, 0.4 )
+zoom = Vector2( 1, 0.7 )
 smoothing_enabled = true
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="Camera2D"]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="Camera2D/ParallaxBackground"]
+motion_scale = Vector2( 0.75, 1 )
 
 [node name="TextureRect" type="TextureRect" parent="Camera2D/ParallaxBackground/ParallaxLayer"]
-margin_left = -286.309
-margin_top = -747.292
-margin_right = 1633.69
-margin_bottom = 332.708
+margin_left = -286.0
+margin_top = -422.0
+margin_right = 552.0
+margin_bottom = 333.0
 texture = ExtResource( 3 )
+expand = true
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="Camera2D/ParallaxBackground"]
+motion_scale = Vector2( 0.5, 1 )
+
+[node name="TextureRect" type="TextureRect" parent="Camera2D/ParallaxBackground/ParallaxLayer2"]
+margin_left = -284.0
+margin_top = -374.0
+margin_right = 540.0
+margin_bottom = 346.0
+texture = ExtResource( 4 )
+expand = true
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="Camera2D/ParallaxBackground"]
+motion_scale = Vector2( 0.25, 1 )
+
+[node name="TextureRect" type="TextureRect" parent="Camera2D/ParallaxBackground/ParallaxLayer3"]
+margin_left = -283.425
+margin_top = -191.345
+margin_right = 555.575
+margin_bottom = 144.655
+texture = ExtResource( 5 )
 expand = true
 [connection signal="animate" from="." to="AnimationPlayer" method="_on_Player_animate"]

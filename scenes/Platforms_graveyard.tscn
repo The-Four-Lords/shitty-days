@@ -1,0 +1,78 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/GFX/platforms/graveyard/graveyard_platform_02.png" type="Texture" id=1]
+[ext_resource path="res://assets/GFX/platforms/graveyard/graveyard_platform_03.png" type="Texture" id=2]
+[ext_resource path="res://assets/GFX/platforms/graveyard/graveyard_platform_04.png" type="Texture" id=3]
+[ext_resource path="res://assets/GFX/platforms/graveyard/graveyard_platform_05.png" type="Texture" id=4]
+[ext_resource path="res://assets/GFX/platforms/graveyard/graveyard_platform_06.png" type="Texture" id=5]
+[ext_resource path="res://assets/GFX/platforms/graveyard/graveyard_platform_07.png" type="Texture" id=6]
+[ext_resource path="res://assets/GFX/platforms/graveyard/graveyard_platform_08.png" type="Texture" id=7]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 9.06799, 16.1799 )
+
+[node name="Platforms_graveyard" type="Node2D"]
+editor/display_folded = true
+
+[node name="graveyard_platform_02" type="Sprite" parent="."]
+position = Vector2( 417.915, 368.847 )
+texture = ExtResource( 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="graveyard_platform_02"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="graveyard_platform_02/StaticBody2D"]
+polygon = PoolVector2Array( -19.0921, 31.4492, -19.0921, -1.19278, 13.0358, -16.2286, 13.1643, 31.7062 )
+
+[node name="graveyard_platform_03" type="Sprite" parent="."]
+position = Vector2( 339.081, 366.262 )
+texture = ExtResource( 2 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="graveyard_platform_03"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="graveyard_platform_03/StaticBody2D"]
+polygon = PoolVector2Array( -46.0131, 31.3351, -45.8846, 1.77747, 18.2427, 1.77747, 18.2427, 17.0703, 49.471, 17.0703, 49.471, 31.8492 )
+
+[node name="graveyard_platform_04" type="Sprite" parent="."]
+position = Vector2( 459.27, 370.139 )
+texture = ExtResource( 3 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="graveyard_platform_04"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="graveyard_platform_04/StaticBody2D"]
+polygon = PoolVector2Array( -18.0031, 31.4939, -18.119, -16.4065, 14.1239, -0.401031, 14.1239, 31.7259 )
+
+[node name="graveyard_platform_05" type="Sprite" parent="."]
+position = Vector2( 800.886, 242.946 )
+texture = ExtResource( 4 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="graveyard_platform_05"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="graveyard_platform_05/StaticBody2D"]
+polygon = PoolVector2Array( -15.8128, 47.9681, -15.6907, 16.592, -8.73181, 16.4699, -8.76764, -31.9391, -11.7396, -35.7852, -11.7396, -41.3796, -15.5858, -42.6033, -15.7842, -47.6755, 16.1423, -47.8254, 15.8825, -43.1278, 11.3371, -41.2048, 11.1622, -35.6104, 9.06439, -32.1139, 9.414, 16.1375, 15.8825, 16.1375, 15.9296, 47.846 )
+
+[node name="graveyard_platform_06" type="Sprite" parent="."]
+position = Vector2( 247.906, 365.487 )
+texture = ExtResource( 5 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="graveyard_platform_06"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="graveyard_platform_06/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="graveyard_platform_07" type="Sprite" parent="."]
+position = Vector2( 563.896, 153.589 )
+texture = ExtResource( 6 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="graveyard_platform_07"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="graveyard_platform_07/StaticBody2D"]
+polygon = PoolVector2Array( -55.8563, 20.1665, -56.1703, 5.30289, -14.0916, -13.8524, 10.2974, -13.8524, 56.0397, 5.82626, 56.0397, 20.1665 )
+
+[node name="graveyard_platform_08" type="Sprite" parent="."]
+position = Vector2( 297.065, 180.848 )
+texture = ExtResource( 7 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="graveyard_platform_08"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="graveyard_platform_08/StaticBody2D"]
+polygon = PoolVector2Array( -73.8331, 15.1367, -57.1139, -16.4941, 57.6608, -16.2681, 73.9281, 15.8146 )
