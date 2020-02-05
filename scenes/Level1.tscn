@@ -1,42 +1,40 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://scripts/Level1.gd" type="Script" id=1]
-[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://assets/SFX/theme_boss.ogg" type="AudioStream" id=3]
-[ext_resource path="res://scenes/Enemies/Hound.tscn" type="PackedScene" id=4]
-[ext_resource path="res://scripts/Level0.gd" type="Script" id=5]
-[ext_resource path="res://scripts/Enemies/Enemies.gd" type="Script" id=6]
-[ext_resource path="res://tilesets/Platforms_graveyard.res" type="TileSet" id=7]
+[ext_resource path="res://assets/SFX/theme_boss.ogg" type="AudioStream" id=2]
+[ext_resource path="res://scenes/Enemies/Hound.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scripts/Level0.gd" type="Script" id=4]
+[ext_resource path="res://scripts/Enemies/Enemies.gd" type="Script" id=5]
+[ext_resource path="res://tilesets/Platforms_graveyard.res" type="TileSet" id=6]
+[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=7]
 
 [node name="Level1" type="Node2D"]
 script = ExtResource( 1 )
 
-[node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 2.29279, 1.35655 )
-
 [node name="Theme" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource( 3 )
+stream = ExtResource( 2 )
 volume_db = -20.0
 attenuation = 0.108819
 
 [node name="Enemies" type="Node2D" parent="."]
 
-[node name="Hound" parent="Enemies" instance=ExtResource( 4 )]
+[node name="Hound" parent="Enemies" instance=ExtResource( 3 )]
 position = Vector2( 542.719, -78.0212 )
 
 [node name="Gamestate" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 4 )
 
 [node name="Enemiesstate" type="Node2D" parent="."]
-script = ExtResource( 6 )
+script = ExtResource( 5 )
 
 [node name="TileMap" type="TileMap" parent="."]
 mode = 2
-tile_set = ExtResource( 7 )
+tile_set = ExtResource( 6 )
 cell_size = Vector2( 16, 16 )
 cell_custom_transform = Transform2D( 4, 0, 0, 4, 0, 0 )
-centered_textures = true
 collision_layer = 4
 collision_mask = 3
 format = 1
-tile_data = PoolIntArray( -720810, 5, 0, -393146, 0, 0, -393114, 2, 0, -196545, 0, 0, -196499, 2, 0, -130987, 6, 0, -130925, 5, 0, -130897, 5, 0, -130869, 5, 0, -65407, 1, 0, 56, 0, 0, 114, 2, 0, 131146, 6, 0, 131160, 6, 0, 262125, 1, 0, 262133, 1, 0, 262141, 1, 0, 196613, 1, 0, 196621, 1, 0, 196629, 1, 0, 196637, 1, 0, 196645, 1, 0, 196653, 1, 0, 196657, 0, 0, 327775, 6, 0, 393363, 6, 0, 393391, 6, 0, 393418, 6, 0, 458817, 6, 0, 524386, 6, 0 )
+tile_data = PoolIntArray( -720810, 5, 0, -393146, 0, 0, -393114, 2, 0, -196499, 2, 0, -130987, 6, 0, -130925, 5, 0, -130897, 5, 0, -130869, 5, 0, -65407, 1, 0, 114, 2, 0, 65597, 0, 0, 131146, 6, 0, 131160, 6, 0, 262125, 1, 0, 262133, 1, 0, 262141, 1, 0, 196613, 1, 0, 196621, 1, 0, 196629, 1, 0, 196637, 1, 0, 196645, 1, 0, 196653, 1, 0, 262198, 0, 0, 327775, 6, 0, 393363, 6, 0, 393391, 6, 0, 393418, 6, 0, 458817, 6, 0, 524386, 6, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 7 )]
