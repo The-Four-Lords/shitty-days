@@ -41,6 +41,6 @@ func move():
 		motion.x = 0
 
 
-func animate():
+func animate():	
 	#print("holdLeft:",holdLeft," holdRight:",holdRight," holdJump:",holdJump," holdAttack:",holdAttack)
 	emit_signal("animate", motion, Input.is_action_pressed("attack"))
